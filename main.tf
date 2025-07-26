@@ -10,3 +10,8 @@ provider "azurerm" {
   features {}
   
 }
+
+resource "azurerm_resource_group" "priya" {
+  name     = "priyarg"
+  location = "West US"
+}
