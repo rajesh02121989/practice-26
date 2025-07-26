@@ -15,3 +15,7 @@ resource "azurerm_resource_group" "priya" {
   name     = "priyarg"
   location = "West US"
 }
+resource "azurerm_resource_group" "priya2" {
+  name     = "priyarg2"
+  location = "West US"
+}
