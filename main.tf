@@ -26,3 +26,11 @@ resource "azurerm_storage_account" "priya" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
+
+resource "azurerm_storage_account" "sjvn" {
+  name                     = "priyastorageacct"
+  resource_group_name      = azurerm_resource_group.sjvn.name
+  location                 = azurerm_resource_group.sjvn.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+}
