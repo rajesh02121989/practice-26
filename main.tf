@@ -34,3 +34,8 @@ resource "azurerm_storage_account" "sjvn" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
+
+resource "azurerm_resource_group" "appraisal" {
+  name     = "appraisalrg"
+  location = "West US"
+}
